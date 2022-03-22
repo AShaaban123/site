@@ -1,0 +1,60 @@
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Site</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+  <img 
+    src="te.png"> 
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    </li>
+  <li class="nav-item">
+    <a class="nav-link" href="about.html">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="why.html">Why Amadeus?</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="pricing.html">Pricing & FAQ</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sign.html">Sign Up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="admin.html">Admin</a>
+  </li>
+
+</ul>
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "Amadeus") {
+alert('Access granted');
+window.open('adminopen.html');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="Amadeus" & testV ==3)
+history.go(-1);
+return " ";
+}
+</SCRIPT>
+  <p>Password is "Amadeus" </p>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
